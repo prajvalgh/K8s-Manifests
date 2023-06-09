@@ -18,7 +18,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - image: prajvalgh/packages:6
+      - image: prajvalgh/packages:1
         name: myapp
         resources: {}
 status: {}
