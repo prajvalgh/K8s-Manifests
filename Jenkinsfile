@@ -20,7 +20,8 @@ node {
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'By Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
-                        sh "git push https://${GIT_PASSWORD}@github.com/${GIT_USERNAME}/K8s-Manifests.git HEAD:main" 
+			sh "git git remote set-url origin https://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@github.com/prajvalgh/K8s-Manifests.git"
+                        sh "git push origin main" 
       }
     }
   }
